@@ -1,10 +1,11 @@
 library(shiny)
+library(digest)
 
 # Define UI for application that plots random distributions
 shinyUI(pageWithSidebar(
  
   # Application title
-  headerPanel("It's Alive!"),
+  headerPanel(find.package("digest")),
  
   # Sidebar with a slider input for number of observations
   sidebarPanel(
